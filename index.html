@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rogue</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section class="main">
+				<header>
+					<div class="overlay"></div>
+					<div class="open menu"><i class="fa-solid fa-bars-staggered"></i></div>
+					<h2>Rogue</h2>
+					<div class="preference">
+						<div>Model<i class=""></i></div>
+						<div>Tone<i class=""></i></div>
+					</div>
+					<div class="open more"><i onclick="showMore()" class="fa-solid fa-ellipsis-vertical"></i>
+						<div id="moreOption" class="hidden option">
+							<p>New chat<i class="fa-solid fa-comment-medical"></i></p>
+							<p>Rename Chat<i class="fa-regular fa-pen-to-square"></i></p>
+							<p>Add people<i class="fa-solid fa-user-plus"></i></p>
+							<p>Pin<i class="fa-solid fa-thumbtack"></i></p>
+							<p>Incognito<i class="fa-solid fa-eye-slash"></i></p>
+							<p>delete<i class="fa-solid fa-trash"></i></p>
+						</div>
+					</div>
+				</header>
+				
+				<div class="chat-box">
+					<h3 id="welcome">What's on your mind right now daniel?</h3>
+					
+					<div class="input-field">
+						<div class="input-inner">
+							<textarea oninput="showError(this)" placeholder="chat rogue..." name="" id="input"></textarea>
+							<div onclick="sendInput()" class="send"><i class="fa-solid fa-paper-plane"></i></div>
+						</div>
+						<div class="error">Rouge is AI and can make mistakes. Learn more</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<script src="script.js"></script>
+	</body>
+</html>
